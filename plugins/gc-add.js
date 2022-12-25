@@ -45,7 +45,7 @@ throw m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸�
 }
 handler.help = ['add', '+'].map(v => v + ' número')
 handler.tags = ['group']
-handler.command = /^(add|agregar|añadir|\+)$/i
+handler.command = /^(add|اضافه|اضافة|\+)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
