@@ -2,30 +2,29 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
+import { generateWAMessageFromContent } from '@adiwajshing/baileys'
 
 global.owner = [
-  ['5219992095479', '👑 Mystic - Creador 👑', true],
-  ['Unptoadrih15', '👑 Mystic - Collaborator 1 👑', true],
-  ['50499698072', '👑 Mystic - Collaborator 2 👑', true],
-  ['51940617554', '👑 Mystic - Collaborator 3 👑', true],
-  ['51996089079', '👑 Mystic - Collaborator 4 👑', true],
-  ['573225236629', '👑 Mystic - Collaborator 5 👑', true],
-  ['593959425714', '👑 Mystic - Collaborator 6 👑', true],
-  ['50246028932', '👑 Mystic - Collaborator 7 👑', true],  
-  ['593968585283'],
-  ['5219992095479'],
-  ['5219991402134'],
-  ['5219993404349'],
-  ['5219996125657']
+  ['201098906252', '👑 ELGAZAR-ALWAZER 👑', true],
+  ['201098906252', '👑 ELGAZAR-ALWAZER 1 👑', true],
+  ['201098906252', '👑 ELGAZAR-ALWAZER 2 👑', true],
+  ['201098906252', '👑 ELGAZAR-ALWAZER 3 👑', true],
+  ['201098906252', '👑 ELGAZAR-ALWAZER 4 👑', true],
+  ['201098906252', '👑 ELGAZAR-ALWAZER 5 👑', true],
+  ['201098906252'],
+  ['201098906252'],
+  ['201098906252'],
+  ['201098906252'],
+  ['201098906252']
 ] 
-global.suittag = ['5219993404349'] 
-global.prems = ['51995386439'] 
+global.suittag = ['201098906252'] 
+global.prems = ['201098906252'] 
 
-global.packname = '(☞ﾟ∀ﾟ)☞'
-global.author = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.wm = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.igfg = '★𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝★'
-global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
+global.packname = '⍣الجزار الوزير يروحي⍣'
+global.author = '⍣01098906252⍣'
+global.wm = '𝘌𝘓Ｇ𝘈𝘡𝘈𝘙 𝘉𝘖𝘛❤'
+global.igfg = '𝘌𝘓Ｇ𝘈𝘡𝘈𝘙 𝘉𝘖𝘛❤'
+global.wait = '*استني شويه...*'
 
 global.keysZens = ['fiktod', 'c2459db922', 'BF39D349845E', '675e34de8a', '37CC845916', '0b917b905e6f', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
@@ -86,7 +85,8 @@ global.APIKeys = { // APIKey Here
 global.imagen1 = fs.readFileSync('./Menu2.jpg')
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg') 
 global.imagen3 = fs.readFileSync('./src/Pre Bot Publi.png')
-global.imagen4 = fs.readFileSync('./Menu.png')
+
+global.generateWAMessageFromContent = generateWAMessageFromContent
 
 global.mods = [] 
 
