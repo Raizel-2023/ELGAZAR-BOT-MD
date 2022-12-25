@@ -1,19 +1,17 @@
 const { levelling } = '../lib/levelling.js'
 import PhoneNumber from 'awesome-phonenumber'
 let handler = async (m, { conn, usedPrefix }) => {
-let pp = imagen4
+let pp = './Menu2.jpg'
 try {
 } catch (e) {
 } finally {
 //let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
 let name = await conn.getName(m.sender)
 let str = `
-*ミ💖 𝙷𝙾𝙻𝙰 _${name}_ 💖彡*
+*ミ💖 هلا _${name}_ 💖彡*
 
-${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`)}
-
-*<𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎𝐒/>*
-*- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)*
+*<قائمه الصوتيات/>*
+*- ضع اي علامه من العلامات التاليه قبل كل امر (#, /, *, .)*
 
 ° ඬ⃟🔊 _Quien es tu sempai botsito 7w7_
 ° ඬ⃟🔊 _Te diagnostico con gay_
@@ -57,12 +55,12 @@ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${glo
 ° ඬ⃟🔊 _:c_
 ° ඬ⃟🔊 _a_
 `.trim()
-conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']
+conn.sendHydrated(m.chat, str, wm, pp, 'https://chat.whatsapp.com/LKmBPoBH1acGeUJHYjCcaq', 'الدعم', null, null, [
+['كل الاوامر✨', '/menu']
 ], m)
 }}
-handler.help = ['menu2', 'help2', '?2', 'menuaudios']
+handler.help = ['menu2', 'اوامر2', '?2', 'الاوامر2']
 handler.tags = ['main']
-handler.command = /^(menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audio|keyaudio|keyaudios)$/i
+handler.command = /^(menu2|audios|اوامر2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|الاوامر2|audio)$/i
 handler.fail = null
 export default  handler

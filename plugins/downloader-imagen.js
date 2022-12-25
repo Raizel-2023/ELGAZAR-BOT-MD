@@ -4,13 +4,13 @@ if (!text) throw `*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙹𝙴𝙼𝙿𝙻𝙾 𝙳�
 const res = await googleImage(text)
 let image = res.getRandom()
 let link = image
-conn.sendHydrated(m.chat, `🔎 *𝚁𝙴𝚂𝚄𝙻𝚃𝙰𝙳𝙾 𝙳𝙴:* ${text}
-🌎 *𝙱𝚄𝙲𝙰𝙳𝙾𝚁:* Google
-`, author, link, link, '🔗 𝚄𝚁𝙻', null, null, [
-['🔄 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 🔄', `/imagen ${text}`]
+conn.sendHydrated(m.chat, `🔎 *عنوان البحث:* ${text}
+🌎 *الموقع:* جوجل
+`, author, link, link, '🔗 الرابط', null, null, [
+['🔄 الصوره التاليه 🔄', `/imagen ${text}`]
 ], m)
 }
-handler.help = ['gimage <query>', 'imagen <query>']
+handler.help = ['صوره <query>', 'صورة <query>']
 handler.tags = ['internet', 'tools']
-handler.command = /^(gimage|image|imagen)$/i
+handler.command = /^(صورة|image|صوره)$/i
 export default handler
